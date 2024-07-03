@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Hind+Vadodara:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vazirmatn:wght@100..900&family=Yellowtail&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --green: #274C5B;
+    --light: #7EB693;
+    --text: #525C60;
+}
+
+
+/* navigation */
+
+.navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.icn span {
+    font-weight: bold;
+    color: var(--green);
+    font-size: 20px;
+}
+
+.icn i {
+    font-size: 20px;
+    background-color: #7EB693;
+    color: white;
+    padding: 15px;
+    border-radius: 150px;
+}
+
+#cart {
+    background-color: var(--green);
+    margin: 0px 10px;
+}
+
+@media (max-width:700px) {
+    .icn {
+        display: none;
+    }
+}
+
+/* home */
+.home {
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    padding: 10px 10%;
+    height: 90vh;
+    background: url('/images/Banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content span {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--light);
+}
+
+.content h1 {
+    color: var(--green);
+    font-weight: bolder;
+    font-size: 3.5rem;
+}
+
+.btn a {
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: #274C5B;
+    padding: 20px 40px;
+    background-color: #EFD372;
+}
+
+/* cards */
+
+.padding {
+    padding: 100px 40px;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardd {
+    position: relative;
+    width: 450px;
+    border: none;
+    outline: none;
+}
+
+.cardd img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.text {
+    position: absolute;
+    top: 20%;
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.text h4 {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+}
+
+.two h3 {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.two h4 {
+    color: var(--light)
+}
+
+.one h3 {
+    color: white;
+    font-weight: bold;
+}
+
+/* about us */
+
+.row {
+    justify-content: center;
+}
+
+.about h4 {
+    font-family: "Yellowtail", cursive;
+    color: var(--light);
+}
+
+.about h2 {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.about p {
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.abt-png {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.abt-png i {
+    font-size: 3rem;
+    padding: 20px;
+    color: var(--light);
+}
+
+.abt-png h3 {
+    font-size: 24px;
+}
+
+.sub a {
+    background-color: var(--green);
+    color: white;
+}
+
+/* products */
+
+.products {
+    padding: 80px 40px;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.sub-head {
+    font-size: 26px;
+    color: var(--light);
+    font-family: "Yellowtail", cursive;
+}
+
+.main-head {
+    font-size: 40px;
+    color: var(--green);
+    font-weight: bold;
+}
+
+.card-row {
+    padding: 20px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.acard {
+    width: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.250);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.acard img {
+    width: 100%;
+}
+
+.name {
+    background-color: var(--green);
+    padding: 5px 12px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.name a {
+    text-decoration: none;
+    color: white;
+}
+
+.fname {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.card-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: var(--green);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.price span {
+    color: gray;
+    text-decoration: line-through;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.stars i {
+    color: #FFA858;
+    font-size: 13px;
+}
+
+.testimonial {
+    background: url('/images/products/testimonial.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.customer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.dummy {
+    font-size: 20px;
+    padding-top: 10px;
+    color: #525C60;
+}
+
+.names {
+    font-size: 27px;
+    color: #274C5B;
+    font-weight: bold;
+}
+
+.consumer {
+    font-size: 17px;
+    color: #525C60;
+    padding-top: -10px;
+}
+
+.round-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.round {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid 3px var(--light);
+    border-radius: 600px;
+}
+
+.round h2 {
+    font-size: 50px;
+    color: var(--green);
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.offer {
+    background-color: #274C5B;
+}
+
+.offers {
+    padding: 100px;
+}
+
+.off-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.off-head p {
+    font-size: 23px;
+    font-family: "Yellowtail", cursive;
+    color: var(--light);
+}
+
+.off-head p span {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.log .lg {
+    width: 250px;
+    margin: auto;
+}
+
+.log .ic {
+    width: 300px;
+    margin: auto;
+}
+
+.log p {
+    margin-top: 10px;
+}
+/* gallery */
+.gallery{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.juice{
+    background: url('/images/juice.png');
+    background-size: cover;
+}
+.mint{
+    background: url('/images/leaf.png');
+    background-size: cover;
+}
+.snack{
+    background: url('/images/snack.png');
+    background-size: cover;
+}
+.cardb{
+    width: 400px;
+    height: 400px;
+    background-color: #274C5B;
+    position: relative;
+    transition: transform 0.3s;
+
+}
+.cardb a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #274C5B;
+    background-color: white;
+    padding: 15px 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: color 0.3s;
+}
+.cardb:hover{
+    transform: scale(1.05);
+}
+.cardb:hover a{
+    background-color: #274C5B;
+    color: white;
+}
+.news{
+    width: 100%;
+    padding: 60px 100px;
+}
+.news-banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    padding: 20px 40px;
+    background: url('/images/ban.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.news-banner h2{
+    color: white;
+    flex: 1;
+}
+.email-input {
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+.subs{
+    background-color: var(--green);
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .gallery{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .news {
+        padding: 40px 20px; 
+    }
+
+    .news-banner {
+        flex-direction: column;
+        height: auto;
+        padding: 20px; 
+    }
+
+    .news-banner h2 {
+        margin-bottom: 20px; 
+        text-align: center; 
+    }
+
+    .news-banner .ne {
+        width: 100%;
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .ne a{
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .email-input {
+        width: 100%; 
+    }
+
+    .subs {
+        width: 100%; 
+        text-align: center; 
+    }
+}
+@media (max-width:600px) {
+
+    .offers {
+        padding: 40px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .log {
+        margin: 20px 0;
+    }
+
+}
